@@ -32,6 +32,19 @@ export default {
   props: {
     posts: Array
   },
+  data() {
+    return {
+      creating: false,
+      error: '',
+      post: {
+          user: {
+              username: ''
+          }
+      },
+      comments: {},
+      comment: '',
+    }
+  },
   methods: {
     formatDate(date) {
       if (moment(date).diff(Date.now(), 'days') < 15)
