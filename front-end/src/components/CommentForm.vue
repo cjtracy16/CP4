@@ -33,7 +33,7 @@ import axios from 'axios';
 import moment from 'moment';
 export default {
   name: 'Post',
-  data() { //TEST BRANCH
+  data() { //TEST BRANCH AGAIN
     return {
       creating: false,
       posts: [],
