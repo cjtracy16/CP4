@@ -18,7 +18,7 @@
       </form>
     </div>
 
-    <div class="comments" v-for="comment in comments" v-bind:key="comment.id">
+    <div class="comments" v-for="comment in comments" v-bind:key="comment.id"> 
         <div class="commentInfo">
             <div class="comment">
               <p>{{comment.comment}} -- Posted {{formatDate(comment.created)}} by {{comment.user.username}}</p> <!--UNABLE TO CALL .user.username-->
@@ -33,7 +33,7 @@ import axios from 'axios';
 import moment from 'moment';
 export default {
   name: 'Post',
-  data() {
+  data() { //TEST BRANCH
     return {
       creating: false,
       posts: [],
